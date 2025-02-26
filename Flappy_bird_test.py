@@ -110,7 +110,8 @@ def game():
                     bird.jump()
             if game_over and event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_y:
-                    game()  # Restart
+                  running = False  
+                  game()  # Restart
                 elif event.key == pygame.K_n:
                     running = False
 
